@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dessins</title>
+</head>
+<body>
+    <h1>Dessins</h1>
+<!--    <section>-->
+<!--    <form method="POST" class="post-form">-->
+<!--        <fieldset>-->
+<!--            <legend>Crée une forme</legend>-->
+<!--            <div>-->
+<!--                <label for="forme-select">Forme:</label>-->
+<!--                <select name="forme-select" id="forme-select">-->
+<!--                    <option value='Rectangle'>Rectangle</option>-->
+<!--                    <option value='Cercle'>Cercle</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <label for="total-width">Longueur</label>-->
+<!--                <input type="number" step="1" id="total-width" name="total-width">-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <label for="total-height">Hauteur</label>-->
+<!--                <input type="number" step="1" id="total-height" name="total-height">-->
+<!--            </div>-->
+<!--            <button class='button button-primary'>Crée</button>-->
+<!--        </fieldset>-->
+<!--    </form>-->
+<!--</section>-->
+    
+    <svg width="800" height="600">
+    <?php if (! empty($_POST)): ?>
+        <?= $rectangle->draw() ?>
+        <!--<?= $circle->draw() ?>-->
+    <?php endif ?>
+    </svg>
+</body>
+</html>
